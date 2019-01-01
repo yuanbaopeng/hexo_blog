@@ -24,19 +24,8 @@
   {% set js_vendors.fancybox  = 'fancybox/source/jquery.fancybox.pack.js?v=2.1.5' %}
 {% endif %}
 
-{% if theme.canvas_nest.enable %}
-  {% if theme.canvas_nest.onmobile %}
-    {% set canvas_nest_uri = url_for(theme.vendors._internal + '/canvas-nest/canvas-nest.min.js')%}
-      {% if theme.vendors.canvas_nest %}
-        {% set canvas_nest_uri = theme.vendors.canvas_nest %}
-      {% endif %}
-  {% else %}
-    {% set canvas_nest_uri = url_for(theme.vendors._internal + '/canvas-nest/canvas-nest-nomobile.min.js')%}
-      {% if theme.vendors.canvas_nest_nomobile %}
-        {% set canvas_nest_uri = theme.vendors.canvas_nest_nomobile %}
-      {% endif %}
-  {% endif %}
-  <script type="text/javascript" color='{{ theme.canvas_nest.color }}' opacity='{{ theme.canvas_nest.opacity }}' zIndex='{{ theme.canvas_nest.zIndex }}' count='{{ theme.canvas_nest.count }}' src="{{ canvas_nest_uri }}"></script>
+{% if theme.canvas_nest %}
+  {% set js_vendors.canvas_nest  = 'canvas-nest/canvas-nest.min.js' %}
 {% endif %}
 
 {% if theme.three_waves %}
@@ -56,10 +45,6 @@
 
 {% if theme.canvas_ribbon.enable and theme.scheme === 'Pisces'%}
   {% set js_vendors.canvas_ribbon  = 'canvas-ribbon/canvas-ribbon.js' %}
-{% endif %}
-
-{% if theme.reading_progress.enable %}
-  {% set js_vendors.reading_progress  = 'reading_progress/reading_progress.js' %}
 {% endif %}
 
 {% for name, internal in js_vendors %}

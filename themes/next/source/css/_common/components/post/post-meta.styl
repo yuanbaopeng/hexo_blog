@@ -16,14 +16,9 @@
     font-size: 14px;
     margin-top: 2px;
   }
-
-  time {
-    border-bottom: 1px dashed $grey-dark;
-    cursor: help;
-  }
 }
 
-.post-symbolscount {
+.post-wordcount {
   if !hexo-config('symbols_count_time.separated_meta') { display: inline-block; }
 }
 
@@ -47,4 +42,8 @@
   +mobile() {
     display: none;
   }
+}
+
+.posts-expand .post-comments-count {
+  +mobile() { display: none; }
 }
