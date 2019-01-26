@@ -12,7 +12,7 @@ mathjax: true
 
 xLearn是由Chao Ma实现的一个高效的机器学习算法库，这里附上github地址：
 
-https://github.com/aksnzhy/xlearn
+[https://github.com/aksnzhy/xlearn](https://github.com/aksnzhy/xlearn)
 
 FM是机器学习中一个在CTR领域中表现突出的模型，最早由Konstanz大学Steffen Rendle（现任职于Google）于2010年最早提出。
 
@@ -137,9 +137,9 @@ $$v_{if}x_i\left(\sum_{j=1}^nv_{jf} x_j-v_{if}x_i\right ) $$
 
 参考链接：
 
-http://www.algo.uni-konstanz.de/members/rendle/pdf/Rendle2010FM.pdf
+[http://www.algo.uni-konstanz.de/members/rendle/pdf/Rendle2010FM.pdf](http://www.algo.uni-konstanz.de/members/rendle/pdf/Rendle2010FM.pdf)
 
-https://tech.meituan.com/2016/03/03/deep-understanding-of-ffm-principles-and-practices.html
+[https://tech.meituan.com/2016/03/03/deep-understanding-of-ffm-principles-and-practices.html](https://tech.meituan.com/2016/03/03/deep-understanding-of-ffm-principles-and-practices.html)
 
 
 
